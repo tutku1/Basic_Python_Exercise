@@ -1,0 +1,63 @@
+#get user selection
+import random 
+user = input("enter a choice(rock,paper,scissors,lizard,spock): ");
+
+#get computer selection
+possibleActions = ["rock", "paper", "scissors","lizard","spock"]
+computer = random.choice(possibleActions)
+print(f"\nYou chose {user}, computer chose {computer}.\n")
+
+#determine a winner
+if user == computer:
+    print(f"Both players selected {user}. It's a tie.")
+    
+elif user =="rock":
+    if computer == "scissors":
+        print("Rock smashes scissors! You win!")
+    if computer == "lizard":
+        print("Rock crushes lizard! You win!")
+    if computer == "spock":
+        print("Spock vaporizes rock! You lose.")
+    else:
+        print("Paper covers rock! You lose.")
+
+elif user == "paper":
+    if computer == "rock":
+        print("Paper covers rock! You win!")
+    if computer == "lizard":
+        print == ("Lizar eats paper! You win!")
+    if computer == "spock":
+        print("Paper disproves spock! You win!")
+    else:
+        print("Scissors cuts paper! You lose.")
+        
+elif user == "scissors":
+    if computer == "paper":
+        print("Scissors cuts paper! You win!")
+    if computer == "lizard":
+        print("Scissors decapitates Lizard! You win!")
+    if computer == "spock":
+        print("Spock smashes scissors! You lose!")
+    else:
+        print("Rock smashes scissors! You lose.")
+        
+elif user == "lizard":
+    if computer == "paper":
+        print("Lizar eats paper! You win.")
+    if computer == "spock":
+        print("Lizard poisons Spock! You win!")
+    if computer =="rock":
+        print("Rock crushes lizard! You lose.")
+    else:
+        print("Scissors decapitates Lizard! You lose.")
+        
+elif user == "spock":
+    if computer == "rock":
+        print("Spock vaporizes rock! You win!")
+    if computer == "scissors":
+        print("Spock smashes Scissors! You win.")
+    if computer == "paper":
+        print("Paper disproves spock! You lose.")
+    else:
+        print("Lizars poisons Spock! You lose.")
+    
